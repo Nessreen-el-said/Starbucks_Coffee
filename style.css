@@ -1,0 +1,660 @@
+/* body */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+}
+
+
+/* nav */
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+}
+
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* logo */
+header .logo {
+position: relative;
+max-width: 80px;
+}
+
+header ul{
+    position: relative;
+    display: flex; 
+}
+
+header ul li{
+    list-style: none;
+}
+
+header ul li a{
+    display: inline-block;
+    color: #333;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+}
+/* nav */
+
+
+/* box of text and img */
+/* part of textBox */
+.content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content .textBox{
+    position: relative;
+    max-width: 600px;
+}
+.content .textBox h2{
+    color: #333;
+    font-size: 4em;
+    line-height: 1.4em;
+    font-weight: 500;
+}
+.content .textBox h2 span{
+    color: #017143;
+    font-size: 1.2em;
+    font-weight: 900;
+}
+.content .textBox p{
+    color: #333;
+}
+.content .textBox a{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: #017143;
+    color: #fff;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+/* part of textBox */
+
+
+/* part of imgBox */
+.content .imgBox{
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    margin-top: 50px;
+}
+.content .imgBox img{
+    max-width: 340px;
+}
+/* part of imgBox */
+
+
+ /* thumb */
+.thumb{
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    display: flex;
+}
+.thumb li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0.5s;   
+}
+.thumb li:hover {
+    transform: translateY(-15px);
+}
+.thumb li img { 
+    max-width: 60px;
+}
+ /* thumb */
+
+/* sci */
+.sci{
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.sci li {
+    list-style: none;
+}
+.sci li a {
+    display: inline-block;
+    margin: 5px 0;
+    transform: scale(0.6);
+    filter: invert(1);
+}
+/* sci */
+
+/* circle */
+.circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100% ;
+    background: #017143;
+    clip-path: circle(600px at right 800px);
+
+}
+/* media  */
+/* From 1025 */
+@media (max-width:1025px) {
+    .content .textBox h2{
+        color: #333;
+        font-size: 3em;
+        line-height: 1.4em;
+        font-weight: 300;
+    }
+    .content .textBox h2 span{
+        color: #017143;
+        font-size: 1.2em;
+        font-weight: 400;
+    }
+}
+
+/* From 999 */
+@media (max-width:999px) {
+    .content .textBox h2{
+        color: #333;
+        font-size: 3em;
+        line-height: 1.4em;
+        font-weight: 300;
+    }
+    .content .textBox h2 span{
+        color: #017143;
+        font-size: 1.4em;
+        font-weight: 400;
+    }
+}
+
+/* From 945*/
+@media (max-width:945px) {
+    .content .textBox h2{
+        color: #333;
+        font-size: 2em;
+        line-height: 1.4em;
+        font-weight: 300;
+    }
+    .content .textBox h2 span{
+        color: #017143;
+        font-size: 1.2em;
+        font-weight: 400;
+    }
+}
+/* from 928 */
+@media (max-width:928px) {
+    .content .textBox h2{
+        color: #333;
+        font-size: 2em;
+        line-height: 1.4em;
+        font-weight: 300;
+    }
+    .content .textBox h2 span{
+        color: #017143;
+        font-size: 1.2em;
+        font-weight: 400;
+    }
+}
+ /* from 834  */
+@media (max-width:834px) {
+    .content .textBox h2{
+        color: #333;
+        font-size: 2em;
+        line-height: 1.4em;
+        font-weight: 300;
+    }
+    .content .textBox h2 span{
+        color: #017143;
+        font-size: 1.2em;
+        font-weight: 400;
+    }
+    /* part of imgBox */
+    .content .imgBox img{
+    max-width: 240px;
+}
+} 
+
+ /* from 729  */
+ @media (max-width:729px) {
+    .content .textBox h2{
+        color: #333;
+        font-size: 2em;
+        line-height: 1.4em;
+        font-weight: 300;
+    }
+    .content .textBox h2 span{
+        color: #017143;
+        font-size: 1.2em;
+        font-weight: 400;
+    }
+    /* part of imgBox */
+    .content .imgBox img{
+    max-width: 180px;
+}
+}
+
+ /* from 658  */
+@media (max-width:658px) {
+
+    .content .textBox h2{
+        color: #333;
+        font-size: 1.8em;
+        line-height: 1.4em;
+        font-weight: 300;
+    }
+    .content .textBox h2 span{
+        color: #017143;
+        font-size: 1.2em;
+        font-weight: 400;
+    }
+    .content .textBox p{
+        color: #333;
+        font-size: small;
+    }
+    /* part of imgBox */
+    .content .imgBox img{
+    max-width: 180px;
+    }
+}
+ /* from 635  */
+@media (max-width:635px) {
+
+/* logo */
+header .logo {
+    position: relative;
+    max-width: 80px;
+    margin-left: -10px;
+
+    }
+    .content .textBox h2{
+        color: #333;
+        font-size: 1.8em;
+        line-height: 1.4em;
+        font-weight: 300;
+    }
+    .content .textBox h2 span{
+        color: #017143;
+        font-size: 1.2em;
+        font-weight: 400;
+    }
+    .content .textBox p{
+        color: #333;
+        font-size:x-small;
+    }
+    /* part of imgBox */
+    .content .imgBox img{
+    max-width: 150px;
+}
+}
+/* from 610  */
+@media (max-width:610px) {
+
+    /* logo */
+    header .logo {
+        position: relative;
+        max-width: 80px;
+        margin-left: -50px;
+    
+        }
+        .content .textBox h2{
+            color: #333;
+            font-size: 1.8em;
+            line-height: 1.4em;
+            font-weight: 300;
+            margin-left: -40px;
+        }
+        .content .textBox h2 span{
+            color: #017143;
+            font-size: 1.2em;
+            font-weight: 400;
+            margin-left: -5px;
+        }
+        .content .textBox p{
+            color: #333;
+            font-size:x-small;
+            margin-left: -40px;
+        }
+        .content .textBox a{
+            margin-left: -40px;
+        }
+
+        /* part of imgBox */
+        .content .imgBox img{
+        max-width: 150px;
+    }
+    }
+/* from 570  */
+@media (max-width:570px) {
+
+    /* logo */
+    header .logo {
+        position: relative;
+        max-width: 60px;
+        margin-left: -50px;
+    
+        }
+        .content .textBox h2{
+            color: #333;
+            font-size: 1.4em;
+            line-height: 1.4em;
+            font-weight: 300;
+            margin-left: -40px;
+            margin-top: -30px;
+        }
+        .content .textBox h2 span{
+            color: #017143;
+            font-size: 1.2em;
+            font-weight: 400;
+            margin-left: -5px;
+        }
+        .content .textBox p{
+            color: #333;
+            font-size:x-small;
+            margin-left: -40px;
+        }
+        .content .textBox a{
+            margin-left: -40px;
+            color: #017143;
+            background: #fff;
+        }
+        /* part of imgBox */
+        .content .imgBox img{
+        max-width: 160px;
+    }
+    }
+/* from 528  */
+@media (max-width:528px) {
+
+    /* logo */
+    header .logo {
+        position: relative;
+        max-width: 60px;
+        margin-left: -50px;
+    
+        }
+        .content .textBox h2{
+            color: #333;
+            font-size: 1.4em;
+            line-height: 1.4em;
+            font-weight: 300;
+            margin-left: -40px;
+            margin-top: -40px;
+        }
+        .content .textBox h2 span{
+            color: #017143;
+            font-size: 1.2em;
+            font-weight: 400;
+            margin-left: -5px;
+        }
+        .content .textBox p{
+            color: #333;
+            font-size:x-small;
+            margin-left: -40px;
+        }
+        .content .textBox a{
+            margin-left: -40px;
+            color: #017143;
+            background: #fff;
+        }
+        /* part of imgBox */
+        .content .imgBox img{
+        max-width: 130px;
+    }
+    }
+
+    /* from 500  */
+@media (max-width:500px) {
+
+    /* logo */
+    header .logo {
+        position: relative;
+        max-width: 60px;
+        margin-left: -50px;
+        }
+        header ul li a{
+            display: inline-block;
+            color: #333;
+            font-weight: 400;
+            margin-left: 30px;
+            text-decoration: none;
+        }
+        .content .textBox h2{
+            color: #333;
+            font-size: 1em;
+            line-height: 1.4em;
+            font-weight: 300;
+            margin-left: -40px;
+            margin-top: -50px;
+        }
+        .content .textBox h2 span{
+            color: #017143;
+            font-size: 1.2em;
+            font-weight: 400;
+            margin-left: -5px;
+        }
+        .content .textBox p{
+            color: #333;
+            font-size:xx-small;
+            margin-left: -40px;
+        }
+        .content .textBox a{
+            margin-left: -40px;
+            color: #017143;
+            background: #fff;
+        }
+        /* part of imgBox */
+        .content .imgBox img{
+        max-width: 110px;
+    }
+    }
+    /* from 468 */
+    @media (max-width:468px) {
+
+        /* logo */
+        header .logo {
+            position: relative;
+            max-width: 60px;
+            margin-left: -80px;
+            }
+            header ul li a{
+                display: inline-block;
+                color: #333;
+                font-weight: 200;
+                font-size: x-small;
+                margin-left: 30px;
+                text-decoration: none;
+            }
+            .content .textBox h2{
+                color: #333;
+                font-size: 1em;
+                line-height: 1.4em;
+                font-weight: 300;
+                margin-left: -80px;
+                margin-top: -60px;
+            }
+            .content .textBox h2 span{
+                color: #017143;
+                font-size: 1.2em;
+                font-weight: 400;
+                margin-left: -5px;
+            }
+            .content .textBox p{
+                color: #333;
+                font-size:xx-small;
+                margin-left: -80px;
+            }
+            .content .textBox a{
+                margin-left: -70px;
+                color: #017143;
+                background: #fff;
+                display: inline-block;
+                margin-top: 20px;
+                border-radius: 40px;
+                font-weight: 500;
+                letter-spacing: 1px;
+                text-decoration: none;
+        }
+            }
+            /* part of imgBox */
+            .content .imgBox img{
+            max-width: 110px;
+        }
+        /* from 450 */
+    @media (max-width:450px){
+         /* logo */
+        header .logo {
+            position: relative;
+            max-width: 50px;
+            margin-left: -80px;
+            }
+            header ul li a{
+                display: inline-block;
+                color: #333;
+                font-weight: 100;
+                font-size: x-small;
+                margin-left: 20px;
+                text-decoration: none;
+            }
+            .content .textBox h2{
+                color: #333;
+                font-size: 1em;
+                line-height: 1.4em;
+                font-weight: 200;
+                margin-left: -80px;
+                /* margin-top: -60px; */
+            }
+            .content .textBox h2 span{
+                color: #017143;
+                font-size: 1.2em;
+                font-weight: 400;
+                margin-left: -5px;
+            }
+            .content .textBox p{
+                color: #333;
+                font-size:xx-small;
+                margin-left: -80px;
+            }
+            .content .textBox a{
+                margin-left: -90px;
+                color: #017143;
+                background: #fff;
+                display: inline-block;
+                margin-top: 20px;
+                border-radius: 40px;
+                font-weight: 500;
+                letter-spacing: 1px;
+                text-decoration: none;
+        }
+            }
+            /* part of imgBox */
+            .content .imgBox img{
+            max-width: 110px;
+            }
+
+
+ /* from 410 */
+@media (max-width:410px){
+    /* logo */
+header .logo {
+    position: relative;
+    max-width: 50px;
+    margin-left: -80px;
+    }
+    header ul li a{
+        display: inline-block;
+        color: #333;
+        font-weight: 100;
+        font-size: x-small;
+        margin-left: 10px;
+        text-decoration: none;
+    }
+    .content .textBox h2{
+        color: #333;
+        font-size: 1em;
+        line-height: 1.4em;
+        font-weight: 200;
+        margin-left: -80px;
+           /* margin-top: -60px; */
+    }
+    .content .textBox h2 span{
+        color: #017143;
+        font-size: 1.2em;
+        font-weight: 400;
+        margin-left: -5px;
+    }
+    .content .textBox p{
+        color: #333;
+        font-size:xx-small;
+        margin-left: -80px;
+    }
+    .content .textBox a{
+            margin-left: -90px;
+            color: #017143;
+        background: #fff;
+        display: inline-block;
+        margin-top: 20px;
+        border-radius: 40px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        text-decoration: none;
+}
+    }
+       /* part of imgBox */
+    .content .imgBox img{
+    max-width: 110px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
